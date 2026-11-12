@@ -1,0 +1,96 @@
+.ef {
+  --ef-ink: #1c2530;
+  --ef-muted: #5b6673;
+  --ef-line: #c9d1d9;
+  --ef-bg: #ffffff;
+  --ef-accent: #1f5f8b;
+  --ef-error: #b3261e;
+  --ef-ok: #1b6b3a;
+
+  max-width: 420px;
+  margin: 2rem auto;
+  padding: 1.75rem;
+  background: var(--ef-bg);
+  color: var(--ef-ink);
+  border: 1px solid var(--ef-line);
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+.ef-title {
+  margin: 0 0 1.25rem;
+  font-size: 1.4rem;
+  font-weight: 650;
+}
+
+.ef-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-bottom: 1.1rem;
+}
+
+.ef-field label {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.ef-field input,
+.ef-field select {
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+  border: 1px solid var(--ef-line);
+  border-radius: 6px;
+}
+
+.ef-field input:focus-visible,
+.ef-field select:focus-visible,
+.ef-button:focus-visible {
+  outline: 2px solid var(--ef-accent);
+  outline-offset: 2px;
+}
+
+.ef-field [aria-invalid="true"] {
+  border-color: var(--ef-error);
+}
+
+.ef-error {
+  font-size: 0.85rem;
+  color: var(--ef-error);
+}
+
+.ef-status {
+  margin: 0 0 1.1rem;
+  padding: 0.65rem 0.75rem;
+  font-size: 0.9rem;
+  border-radius: 6px;
+}
+
+.ef-status--success {
+  color: var(--ef-ok);
+  background: #e8f5ec;
+}
+
+.ef-status--error {
+  color: var(--ef-error);
+  background: #fcebea;
+}
+
+.ef-button {
+  width: 100%;
+  padding: 0.75rem;
+  font: inherit;
+  font-weight: 600;
+  color: #fff;
+  background: var(--ef-accent);
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ef-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
