@@ -1,6 +1,5 @@
 # Employee Management (React + PHP + MySQL)
 
-```
 employee-management/
 ├── backend/
 │   ├── add_employee.php   # Employee API backed by MySQL
@@ -14,9 +13,6 @@ employee-management/
         ├── EmployeeForm.jsx
         └── EmployeeForm.css
 ```
-
-## Requirements
-Node.js 18+, PHP 8+ (with the `pdo_mysql` extension), MySQL or MariaDB.
 
 ## 1. Database
     mysql -u root -p < backend/database.sql
